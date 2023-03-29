@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li><img id="logo"
+                        src="data:image/png;base64,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"
+                        height="100px" width="100px">
+                </li>
+                <li><a href="">Domain Names</a></li>
+                <li><a href="">Websites & hosting</a></li>
+                <li><a href="">commerce</a></li>
+                <li><a href="">Email&Marking</a></li>
+
+            </ul>
+
+
+            <ul class="rightside">
+                <li><a href="">Hire an Expert</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Sign In</a></li>
+                <li><img class="cart"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqAqqAhy9txvQP34k1dslku0ZsYt-bF0IHkg&usqp=CAU">
+                </li>
+            </ul>
+
+        </nav>
+
+        <header>
+            <div class="inputwrapper">
+                <input type="text" placeholder="Type the domain you want">
+                <button>Search Domain</button>
+            </div>
+            <div class="prices">
+                <p>online $0.99</p>
+                <p>Info $0.99</p>
+                <p>$2452</p>
+                <p>$0452</p>
+
+
+            </div>
+        </header>
+
+        <main>
+
+            <div class="leftmain">
+                <div class="content">
+                    <p class="mainmiddle">Websites & Commerce</p>
+                    <h2>Tools for all your <br> business firsts.</h2>
+                    <p class="mainmiddle2">Website and store solutions for<br> any small business.<br><button>Get
+                            Started</button> Learn More <br> No credit card required**</p>
+                    <img class="mainimage" src="main image (2).jpeg">
+                </div>
+            </div>
+
+            <div class="rightmain">
+                <p class="mainmiddle">Bundle & Save</p>
+                <h3>Free domain when <br>you get email that matches your<br> domain.</h3>
+                <p class="mainmiddle3">Nice 2 for 1 — a free domain, plus <br>you build trust with email that
+                    <br>matches.<br><button class="rightmainbtn">Get Email & Free Domain</button></p>
+            </div>
+
+        </main>
+
+        <table>
+
+            <tbody>
+                <tr>
+
+                    <td>Domains</td>
+                    <td>SSL Security</td>
+                    <td>Websites</td>
+                    <td>Wordpress</td>
+                    <td rowspan="2"><span>NEW</span><br>
+                        <h3>Managed<br>Woo commerce stores</h3><br>More flexibility, less<br>limits<br>
+                        <h3>Sell Your Way</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email & Microsoft 365</td>
+                    <td>Website Design services</td>
+                    <td>Online Store</td>
+                    <td>Web Hosting</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <div class="container3">
+
+            <div class="left1">
+                <div class="details3">
+                    <h1>Success in <br>3 easy steps.</h1>
+                </div>
+            </div>
+
+            <div class="right1">
+                <img src="https://img1.wsimg.com/cdn/Image/All/FOS-Intl/1/en-US/374c729e-f05c-470f-b2ab-47047bb9a98b/Waterfallnumber1.jpg"
+                    height="650px" width="500px">
+            </div>
+        </div>
+
+        <div class="container4">
+
+            <div class="left2">
+                <img src="https://img1.wsimg.com/cdn/Image/All/FOS-Intl/2/en-US/ed3b6afe-781a-4b7d-8192-d90ded33633a/Waterfallnumber2.jpg"
+                    height="650px" width="500px">
+            </div>
+
+            <div class="right2">
+                <div class="details4">
+                    <p>01</p>
+                    <h3>Sell online with a website</h3>
+                    <p>Sell anything, from physical products to downloads and services, and manage it all in one
+                        place.<br></p>
+                    <button>Get started</button> Learn More
+                </div>
+            </div>
+        </div>
+
+        <div class="container5">
+
+            <div class="left3">
+                <div class="details5">
+                    <p>02</p>
+                    <h3>Save with the lowest fees</h3>
+                    <p>2.3% + 0¢ per in-person transaction.<br>
+                        2.3% + 30¢ per online transaction.<br>
+                        Enjoy the lowest transaction fees compared to other<br> leading providers.1</p>
+                    <button class="container5btn">Start Getting Paid</button> Learn More
+                </div>
+            </div>
+
+            <div class="right3">
+                <img src="https://img1.wsimg.com/cdn/Image/All/FOS-Intl/1/en-US/35d22dc3-73ad-48e5-87be-83ff14a14fe5/Waterfallnumber3.jpg"
+                    height="650px" width="500px">
+            </div>
+        </div>
+
+        <div class="container6">
+
+            <div class="details6">
+                <p>03</p>
+                <h3>Sell in-person and on the<br> go</h3>
+                <p> Our new Point of Sale devices are designed to<br> fit any business and budget. Choose the one<br>
+                    that’s right for you.</p>
+                <button class="container5btn">Learn More</button> Learn More
+            </div>
+        </div>
+
+
+
+        <div class="ratings">
+
+            <h3>
+                Trusted by 21+ million customers<br>
+                around the world.
+            </h3>
+        </div>
+
+        <div class="container7">
+            <div class="cards">
+                <p><img class="stars" src="trustpilot-5-star-top-rated-500x500-1.png"><br>
+                    I love GoDaddy!!!!! They have the best customer service, website builder, hosting, and URL prices. I
+                    always recommend GoDaddy to all my friends and colleagues who need an online presence. I have had
+                    many other providers but GoDaddy is the best. I'm sticking with GoDaddy. No reason to shop any other
+                    company.</p>
+            </div>
+
+
+            <div class="cards">
+                <p><img class="stars" src="trustpilot-5-star-top-rated-500x500-1.png"><br>
+                    Go Daddy made creating my own website and transferring my domain easy.</p>
+            </div>
+
+
+            <div class="cards">
+                <p><img class="stars" src="trustpilot-5-star-top-rated-500x500-1.png"><br>
+                    It’s an easy way to a start creating a business for new entrepreneurs!</p>
+            </div>
+
+
+            <div class="cards">
+                <p><img class="stars" src="trustpilot-5-star-top-rated-500x500-1.png"><br>
+                    Easy peasy! GoDaddy has great website templates and you can connect your site to your social media
+                    accounts. Create a post using templates they offer, post or schedule and you’re done! You can see
+                    metrics on effectiveness of your campaigns as well, all in one place.</p>
+            </div>
+
+        </div>
+
+
+
+        <h2 class="scan-section">Turn your small business <br>into a big brand.</h2>
+
+
+        <section class="container8">
+            <img src="https://img1.wsimg.com/cdn/Image/All/All/3/en-US/f6253bd1-8729-41bd-ab2a-ed5d1684ea6c/us-img-hp-studio-landscape.jpg"
+                height="700px" width="95%">
+        </section>
+
+
+        <div class="container9">
+            <div class="scan-section1">
+                <p><img
+                        src="https://img1.wsimg.com/cdn/Image/All/All/2/en-US/49c91638-44bf-461b-81b2-0eb03637e52a/us-img-hp-studio-qr-code.svg"><br>
+            </div>
+
+            <h3>Create visual content without <br>design skills.</h3>
+            Make logos, social posts, and ads just like a professional designer would. With <br>thousands of
+            customizable templates, just download the free GoDaddy Studio app<br> to start.<br>
+            <button>Start Creating</button> Learn More</p>
+        </div>
+
+
+        <div class="helpcenter">
+            <img src="https://img1.wsimg.com/cdn/Image/All/All/1/All/7965c0c0-c046-41be-a27c-3ed61a32244c/mrq-Guide-CA-Olivia-desktop.jpg"
+                height="450px" width="100%">
+            <p><img class="icon"
+                    src="data:image/png;base64,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"
+                    height="100px" width="100px"><br></p>
+
+            <div class="help-details">
+                <h2>How can we help?</h2><br>
+                <p>With how-to advice and award-winning support, GoDaddy <br>Guides can help whether you’re a customer
+                    or not.</p>
+
+                Get in touch at 1-480-366-3546<br><button>Visit Help Center</button></p>
+            </div>
+        </div>
+
+        <div class="questions">
+            <h2>Millions of customers<br> rely on our domains and <br>web hosting to get their ideas online.<br></h2>
+            <h3> Frequently Asked Questions</h3>
+        </div>
+
+
+        <footer>
+            <footer class="footer1">
+                <div class="container10">
+
+                    <div class="container11">
+                        <h3>Sign up for news and special offers</h3>
+
+                        <input type="text" placeholder="Email address"><button class="footer-btn">Sign up</button>
+                    </div>
+
+                    <div class="container12">
+                        <h3>We Love taking your call.</h3><br>
+                        <p><img class="footer-icon" src="download-removebg-preview.png" height="200px" width="400px">
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="footer2">
+                    <div class="footer-row">
+
+                        <div class="footer-col">
+                            <h4>About Go Daddy</h4>
+
+                                <li class="footer-list"><a href="#">About us</a></li>
+                                <li class="footer-list"><a href="#">Overview</a></li>
+                                <li class="footer-list"><a href="#">Examples</a></li>
+                                <li class="footer-list"><a href="#">Blog</a></li>
+                            
+                        </div>
+                        
+
+                        <div class="footer-col">
+                            <h4>Help center</h4>
+
+                            <li class="footer-list"><a href="#">Notice</a></li>
+                            <li class="footer-list"><a href="#">License</a></li>
+                            <li class="footer-list"><a href="#">Press Inquiry</a></li>
+                            <li class="footer-list"><a href="#">Press Images</a></li>
+
+
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Resources</h4>
+
+                            <li class="footer-list"><a href="#">Help</a></li>
+                            <li class="footer-list"><a href="#">Tour</a></li>
+                            <li class="footer-list"><a href="#">Contact</a></li>
+                            <li class="footer-list"><a href="#">Privacy</a></li>
+
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>partner Programs</h4>
+
+                            <li class="footer-list"><a href="#">Notice</a></li>
+                            <li class="footer-list"><a href="#">License</a></li>
+                            <li class="footer-list"><a href="#">Press Inquiry</a></li>
+                            <li class="footer-list"><a href="#">Press Images</a></li>
+
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Accounts</h4>
+
+                            <li class="footer-list"><a href="#">Notice</a></li>
+                            <li class="footer-list"><a href="#">License</a></li>
+                            <li class="footer-list"><a href="#">Press Inquiry</a></li>
+                            <li class="footer-list"><a href="#">Press Images</a></li>
+
+
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Shopping</h4>
+
+                            <li class="footer-list"><a href="#">Notice</a></li>
+                            <li class="footer-list"><a href="#">License</a></li>
+                            <li class="footer-list"><a href="#">Press Inquiry</a></li>
+                            <li class="footer-list"><a href="#">Press Images</a></li>
+
+
+                        </div>
+
+
+                    </div>
+
+
+            </footer>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
